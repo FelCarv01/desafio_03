@@ -1,0 +1,127 @@
+number,title,state,labels,milestone,user,assignee,assignees,created_at,updated_at,closed_at,body
+11,Tarefa atrasada,open,,,DaniFBN,,,2023-01-31T03:49:44Z,2023-01-31T13:46:29Z,,"Caso a tarefa esteja atrasada
+  - A data/hora deve ser escrita em um vermelho agradável, que não fuja do design."
+10,Concluir tarefa,open,,,DaniFBN,,,2023-01-31T03:49:21Z,2023-01-31T03:49:21Z,,"Ao concluir uma tarefa
+  - A alteração deve mudar o banco de dados
+  - O design deve refletir o status de concluída"
+9,Ordenação das tarefas,open,,,DaniFBN,,,2023-01-31T03:48:17Z,2023-01-31T15:03:32Z,,"As tarefas devem ser ordenadas por proximidade da data.
+
+Deve ter um teste de unidade sobre a ordenação.
+
+Exemplo
+- 20/01/23
+- 23/01/23
+
+Links úteis
+- [Semana do Teste de unidade](https://www.youtube.com/watch?v=zlYQe-9QMug&list=PLlBnICoI-g-etEtbvgDnO40SYKOSktCj4&ab_channel=Flutterando)
+- [Aulão de Teste de unidade](https://www.youtube.com/watch?v=BLHPRg8ickY&t=1s&ab_channel=Flutterando)"
+8,Carregar tarefas,open,,,DaniFBN,,,2023-01-31T03:45:51Z,2023-01-31T13:54:53Z,,"Ao iniciar o app, carregue e exiba as tarefas na tela.
+
+Como reatividade deve ser usado o `ValueNotifier` com `State Pattern`.
+
+Links úteis
+- [Value Notifier Class](https://api.flutter.dev/flutter/foundation/ValueNotifier-class.html)
+- [Value Notifier Playlist](https://www.youtube.com/watch?v=zV1X9vwYcdI&list=PLlBnICoI-g-eG0eVkHu2IaO48TljxPjPq&ab_channel=Flutterando)"
+7,Inserir tarefa,open,,,DaniFBN,,,2023-01-31T03:45:16Z,2023-01-31T13:43:05Z,,"Com a adaptação no layout feita, o usuário deve concluir a inserção.  
+
+Salve a informação em um banco de dados local.
+
+Deve ser feito uma Interface para não depender diretamente do package.
+
+Links úteis
+- [Hive](https://pub.dev/packages/hive)
+- [SharedPreferences](https://pub.dev/packages/shared_preferences)
+- [Service Pattern](https://www.youtube.com/watch?v=LiTMzWiCFFw&ab_channel=Flutterando)"
+6,Adaptação de layout,open,,,DaniFBN,,,2023-01-31T03:41:40Z,2023-01-31T03:46:41Z,,"Insira um `FloatingActionButton` na segunda tela.
+O `FloatingActionButton` deve abrir um `BottomSheetModal`.  
+
+No Modal deve ser possível inserir as seguintes informações:
+- Título
+- Descrição
+- Data e Hora
+
+Obs.: Não deve ser possível adicionar uma tarefa com Data/Hora anterior
+
+Links úteis
+- [Form](https://docs.flutter.dev/cookbook/forms/validation)
+- [showModalBottomSheet](https://api.flutter.dev/flutter/material/showModalBottomSheet.html)
+- [showDatePicker ](https://api.flutter.dev/flutter/material/showDatePicker.html)
+- [showTimePicker ](https://api.flutter.dev/flutter/material/showTimePicker.html)"
+5,Telas,open,,,DaniFBN,,,2023-01-31T03:33:12Z,2023-01-31T03:33:12Z,,"Tendo todos os widgets complexos feitos no `design system`, monte as 3 telas.
+
+- **TODOS** os dados devem ser mockados em um/uns arquivo(s) a parte.
+
+Links úteis
+- [Mockar, foque no conceito](https://www.devmedia.com.br/mocks-introducao-a-automatizacao-de-testes-com-mock-object/30641)
+- [Mock](https://pt.wikipedia.org/wiki/Objeto_mock)"
+4,Widget com animação implícita,open,,,DaniFBN,,,2023-01-31T03:29:51Z,2023-01-31T03:29:51Z,,"Esse widget especificamente deve ter sua animação feita na mão com animações implícitas.
+
+![implicit_animation_widget](https://user-images.githubusercontent.com/54218517/215654803-2077d549-3909-4a90-aa65-bc295e92d336.jpg)
+
+As animações devem ser feitas com widgets que tenham o prefixo `Animated`.  
+Obs.: Com os 3 Widgets do link e widgets básicos é possível fazer a animação.
+
+Links úteis
+- [Animation tutorial](https://docs.flutter.dev/development/ui/animations/tutorial)
+- [AnimatedRotation](https://api.flutter.dev/flutter/widgets/AnimatedRotation-class.html)
+- [ClipRect](https://api.flutter.dev/flutter/widgets/ClipRect-class.html)
+- [AnimatedAlign - heightFactor](https://api.flutter.dev/flutter/widgets/AnimatedAlign-class.html)
+"
+3,Componentizar,open,,,DaniFBN,,,2023-01-31T03:09:51Z,2023-01-31T13:37:46Z,,"Construa os widgets que foram listado na #2.  
+
+Todos os Widgets devem estar no `design_system` e exibidos no projeto `example`, utilizando o WidgetBook.  
+
+Sugestão: Configure o Theme, pode ser usado o ThemeExtension.  
+Obs.: Não é para ser feito nenhuma geração de código com o WidgetBook.  
+
+Links úteis
+- [WidgetBook Package](https://pub.dev/packages/widgetbook)
+- [WidgetBook Doc](https://docs.widgetbook.io/widgetbook/overview)
+- [ThemeData](https://api.flutter.dev/flutter/material/ThemeData-class.html)
+- [Uso do Theme](https://docs.flutter.dev/cookbook/design/themes)
+- [Cores no Material Design](https://m3.material.io/styles/color/the-color-system/key-colors-tones)
+- [Tipografia no Material Design](https://m3.material.io/styles/typography/type-scale-tokens)
+- [InheritedWidget](https://www.youtube.com/watch?v=aTbuuvSq-Gs&t=9s&ab_channel=Flutterando)
+- [ThemeExtensions | Decoding Flutter](https://www.youtube.com/watch?v=8-szcYzFVao&ab_channel=Flutter)
+- [Theme Extensions | Diego Antunes](https://www.youtube.com/watch?v=CQ24xQaBAWg&ab_channel=Prof.DiegoAntunes)"
+2,Analisar o mockup,open,,,DaniFBN,,,2023-01-31T03:03:52Z,2023-01-31T13:49:30Z,,"Antes de fazer a tela, é importante ler o mockup e identificar e criar os widgets
+
+- Veja o mockup
+- Analise
+- Faça um lista com o Widgets
+---
+Ao pensar se vale a pena criar o widget, responda essas perguntas
+- Se repete?
+- Seria bom estar em uma classe diferente? Por questão de manutenção, visualização mais fácil ou design muito específico?
+---
+Depois de analisar
+- Marque uma review com a lista, não é para codar nada antes
+---
+**NÃO DEVE SER FEITO**
+- Tela 1: Get Premium Roxo
+- Tela 2: As tarefas não devem estar na diagonal
+- Tela 3: Mensagem com design de audio
+- Tela 3: Tigre voando"
+1,Criação do projeto,open,,,DaniFBN,,,2023-01-31T02:53:06Z,2023-01-31T18:36:28Z,,"- Crie o projeto Flutter
+- Cria um package Flutter para ser o `design_system`
+- Crie um projeto Flutter chamado `example` dentro do `design_system`
+
+O projeto principal e o `design_system` devem ter o esse [linter](https://pub.dev/packages/flutterando_analysis).
+
+Estrutura de pastas
+![struct](https://user-images.githubusercontent.com/54218517/215650138-bf1b6d98-fac4-4c4b-93bf-4e630a926ff4.png)
+
+Amarelho - Pasta geral
+Vermelho - App
+Verde - Example
+Azul - Design System
+![struct2](https://user-images.githubusercontent.com/54218517/215650605-7b2bd237-bbdf-47cc-a34f-35ca847d55c8.png)
+
+Links utéis
+- [Monorepo ou Multirepo](https://www.youtube.com/watch?v=UK1Sl4CUnlc&ab_channel=Flutterando)
+- [Monorepo](https://dev.to/stanley/monorepo-o-que-e-devo-usar-133c)
+- [Arch Playlist](https://www.youtube.com/playlist?list=PLRpTFz5_57cvCYRhHUui2Bis-5Ybh78TS)
+- [Monolithic - MicroServices](https://microservices.io/patterns/monolithic.html)
+- [Monolithic - Wikipedia](https://en.wikipedia.org/wiki/Monolithic_application)
+- [Monolithic vs MicroServices](https://www.atlassian.com/microservices/microservices-architecture/microservices-vs-monolith)
+- [Monolithic - Microsoft](https://learn.microsoft.com/en-us/dotnet/architecture/containerized-lifecycle/design-develop-containerized-apps/monolithic-applications)"
